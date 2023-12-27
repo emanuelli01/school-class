@@ -4,6 +4,8 @@ using namespace std;
 class Student
 {
     public:
+    Student(string name, int age, int registration);
+
     void setName(string name)
     {
         name = name;
