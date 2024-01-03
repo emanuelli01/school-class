@@ -6,27 +6,14 @@ class Student
     public:
     Student(string name, int age, int registration);
 
-    void setName(string name)
-    {
-        name = name;
-    }
-    string getName() {return name;}
+    void setName(string name);
+    string getName();
 
-    void setAge(int age)
-    {
-        if (age > 4 && age < 50)
-            age = age;
-        else age = 0;
-    }
-    int getAge() {return age;}
+    void setAge(int age);
+    int getAge();
 
-    void setRegistration(int registration)
-    {
-        if (registration > 0 && registration < 999)
-            registration = registration;
-        else registration = 0;
-    }
-    int getRegistration(){return registration;}
+    void setRegistration(int registration);
+    int getRegistration();
 
     private:
     string name;

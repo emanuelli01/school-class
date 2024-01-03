@@ -4,10 +4,25 @@ using namespace std;
 
 int main()
 {
-    Student *s1 = new Student("Carlos", 25, 8963468);
+    int students;
+    cout << "STUDENTS REGISTERED: " << endl;
 
-    s1->setAge(27);
+    Student *s1[students];
 
-    cout << s1->getName() << endl;
-    return 0;
+    for (int i = 0; i < students; i++)
+    {
+        int regis, age;
+        string name;
+
+        cout << "NAME: ";
+        cin >> name;
+
+        cout << "AGE: ";
+        cin >> age;
+
+        cout << "REGISTRATION: ";
+        cin >> regis;
+
+        s1[i] = new Student(name, age, regis);
+    }
 }
